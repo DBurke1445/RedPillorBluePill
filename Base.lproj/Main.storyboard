@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Blue_pill_or_Red_pill" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Pill" translatesAutoresizingMaskIntoConstraints="NO" id="KQq-Bb-LgL">
+                                <rect key="frame" x="195" y="57" width="157" height="113"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vha-jD-aAX">
+                                <rect key="frame" x="51" y="425" width="79" height="54"/>
+                                <state key="normal" title="Blue Pill"/>
+                                <connections>
+                                    <action selector="Hidetheredpill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rAc-OC-4AL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJ0-3W-QxM">
+                                <rect key="frame" x="228" y="425" width="90" height="55"/>
+                                <state key="normal" title="Red Pill">
+                                    <color key="titleColor" red="1" green="0.087073964607758514" blue="0.16172979408014387" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Hidethebluepill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xhv-cY-Wle"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Pill" translatesAutoresizingMaskIntoConstraints="NO" id="bel-QX-PKy">
+                                <rect key="frame" x="6" y="51" width="169" height="126"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vA-f0-HLW">
+                                <rect key="frame" x="165" y="532" width="46" height="34"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resettheapp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kse-4V-Eja"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BluePill" destination="bel-QX-PKy" id="ETt-Qy-FeZ"/>
+                        <outlet property="Bluebutton" destination="Vha-jD-aAX" id="fq3-lw-fPS"/>
+                        <outlet property="RedPill" destination="KQq-Bb-LgL" id="1gp-Sk-VGg"/>
+                        <outlet property="Redbutton" destination="IJ0-3W-QxM" id="GeF-Rx-hg0"/>
+                        <outlet property="reset" destination="3vA-f0-HLW" id="ufQ-aW-m18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="353.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blue Pill" width="472" height="306"/>
+        <image name="Red Pill" width="441" height="309"/>
+    </resources>
+</document>
